@@ -1,6 +1,10 @@
 let counter1 = 0;
 let counter2 = 1;
 const sections = document.querySelectorAll("section");
+const progress = document.querySelector(".progress h2");
+const progressCounter = () => {
+  progress.textContent = `${counter2}/${sections.length}`;
+};
 
 window.addEventListener("wheel", (e) => {
   const deltaY = e.deltaY > 0;
@@ -21,6 +25,9 @@ window.addEventListener("wheel", (e) => {
 
     counter1 = 0;
     counter2 = 1;
+
+    //Update the progress header
+    progressCounter();
     return;
   }
 
@@ -33,8 +40,12 @@ window.addEventListener("wheel", (e) => {
     });
     counter1 = 4;
     counter2 = 5;
+    //Update the progress header
+    progressCounter();
   }
 
+  //Update the progress header
+  progressCounter();
   //   If DeltaY is postive, scroll down the page using counter1, if negative scroll up page by using counter2
   document.querySelector(
     `.section-${deltaY ? counter1 : counter2}`

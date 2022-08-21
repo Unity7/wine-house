@@ -378,3 +378,112 @@ section {
   letter-spacing: 0.2rem;
 }
 /* End Of Section 5 */
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .left-btn {
+    left: 2rem;
+  }
+
+  .right-btn {
+    right: 2rem;
+  }
+
+  .section-1-heading {
+    font-size: 6rem;
+  }
+
+  .sale-bag {
+    width: 20rem;
+  }
+
+  .wine-bottle {
+    width: 40rem;
+  }
+
+  .section-3-heading {
+    font-size: 11rem;
+    opacity: 0.7;
+  }
+
+  .frame-img {
+    width: 60rem;
+  }
+
+  .new-wines-img {
+    width: 45rem;
+  }
+
+  .progress-wrapper {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .section-1-heading {
+    font-size: 4rem;
+  }
+
+  .sale-bag {
+    width: 15rem;
+  }
+
+  .wine-bottle {
+    width: 30rem;
+  }
+
+  .sale-btn {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .section-3-heading {
+    font-size: 10rem;
+  }
+
+  .frame-img {
+    width: 35rem;
+  }
+
+  .section-4-heading {
+    font-size: 6rem;
+  }
+
+  .new-wines-img {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+
+  .left-btn {
+    left: 0.5rem;
+  }
+
+  .right-btn {
+    right: 0.5rem;
+  }
+
+  .nav-list {
+    top: 6.5rem;
+  }
+
+  .section-3-heading {
+    font-size: 8rem;
+  }
+
+  .grapes-img {
+    width: 15rem;
+  }
+
+  .grapes-img:hover {
+    width: 25rem;
+  }
+}
